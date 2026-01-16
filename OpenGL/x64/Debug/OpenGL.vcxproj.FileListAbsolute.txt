@@ -1,0 +1,2 @@
+F:\_Self-project\Game project\OpenGL\x64\Debug\glfw3.dll
+F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\OpenGL.vcxproj.Up2Date
