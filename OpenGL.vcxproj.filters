@@ -15,71 +15,65 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InitializeSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resources.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stb_image.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseInput.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resoueces.cpp">
+    <ClCompile Include="Constant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mesh.cpp">
+    <ClCompile Include="Resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stb_image.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MouseInput.cpp">
+    <ClCompile Include="Lighting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="FragmentShader.glsl">
+    <ClInclude Include="Constant.h">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="VertexShader.glsl">
+    </ClInclude>
+    <ClInclude Include="Resources.h">
       <Filter>Resource Files</Filter>
-    </None>
+    </ClInclude>
+    <ClInclude Include="InitializeGLFWsystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="awesomeface.png">
+    <None Include="CubeFragmentShader.glsl">
       <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="container.jpg">
+    </None>
+    <None Include="CubeVertexShader.glsl">
       <Filter>Resource Files</Filter>
-    </Image>
+    </None>
+    <None Include="LightFragmentShader.glsl" />
+    <None Include="LightVertexShader.glsl" />
   </ItemGroup>
 </Project>

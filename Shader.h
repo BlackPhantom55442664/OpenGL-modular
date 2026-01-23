@@ -1,5 +1,5 @@
-#ifndef SHADER_CLASS_H
-#define SHADER_CLASS_H
+#ifndef SHADER_H
+#define SHADER_H
 
 #include<glad/glad.h>
 #include<string>
@@ -11,18 +11,20 @@
 
 class Shader {
 public:
-	GLuint ID;
-	std::vector<GLuint> shaderID;
-	
-	//Shader(std::vector<std::pair<const char*, GLenum>> shaders);
-	void createShader(std::vector<std::pair<const char*, GLenum>> shaders);
+	Shader();
+	Shader(std::vector<std::pair<const char*, GLenum>> &shaders);
+	void createShader(std::vector<std::pair<const char*, GLenum>> &shaders);
 	~Shader();
 	void activate();
+	GLuint getID();
 
 private:
+	GLuint ID;
+	std::vector<GLuint> shaderID;
+
 	std::string loadShaderData(const char* path);
 	GLuint createShader(const char* shaderSource, GLenum type);
 	GLuint createProgram();
 };
 
-#endif
+#endif // !SHADER_H

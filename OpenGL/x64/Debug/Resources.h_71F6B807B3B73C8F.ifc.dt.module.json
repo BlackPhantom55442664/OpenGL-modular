@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "OpenGL\\x64\\Debug\\Resources.obj",
+            "outputs": [
+                "OpenGL\\x64\\Debug\\Resources.h_71F6B807B3B73C8F.ifc.dt.module.json",
+                "OpenGL\\x64\\Debug\\Resources.h_71F6B807B3B73C8F.ifc.dt.d.json",
+                "OpenGL\\x64\\Debug\\Resources.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "F:\\_Self-project\\Game project\\OpenGL\\Resources.h",
+                    "source-path": "f:\\_self-project\\game project\\opengl\\resources.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

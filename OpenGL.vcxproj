@@ -18,6 +18,32 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Constant.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Lighting.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Resources.cpp" />
+    <ClCompile Include="Shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Constant.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="InitializeGLFWsystem.h" />
+    <ClInclude Include="Lighting.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Resources.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CubeFragmentShader.glsl" />
+    <None Include="CubeVertexShader.glsl" />
+    <None Include="LightFragmentShader.glsl" />
+    <None Include="LightVertexShader.glsl" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,34 +152,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="InitializeSystem.h" />
-    <ClInclude Include="mesh.h" />
-    <ClInclude Include="MouseInput.h" />
-    <ClInclude Include="Resources.h" />
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="stb_image.h" />
-    <ClInclude Include="Texture.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mesh.cpp" />
-    <ClCompile Include="MouseInput.cpp" />
-    <ClCompile Include="Resoueces.cpp" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="stb_image.cpp" />
-    <ClCompile Include="Texture.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FragmentShader.glsl" />
-    <None Include="VertexShader.glsl" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="awesomeface.png" />
-    <Image Include="container.jpg" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

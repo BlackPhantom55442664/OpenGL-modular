@@ -1,8 +1,7 @@
 F:\_Self-project\Game project\OpenGL\Camera.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Camera.obj
+F:\_Self-project\Game project\OpenGL\Constant.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Constant.obj
+F:\_Self-project\Game project\OpenGL\Cube.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Cube.obj
+F:\_Self-project\Game project\OpenGL\Lighting.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Lighting.obj
 F:\_Self-project\Game project\OpenGL\main.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\main.obj
-F:\_Self-project\Game project\OpenGL\mesh.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\mesh.obj
-F:\_Self-project\Game project\OpenGL\MouseInput.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\MouseInput.obj
-F:\_Self-project\Game project\OpenGL\Resoueces.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Resoueces.obj
+F:\_Self-project\Game project\OpenGL\Resources.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Resources.obj
 F:\_Self-project\Game project\OpenGL\Shader.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Shader.obj
-F:\_Self-project\Game project\OpenGL\stb_image.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\stb_image.obj
-F:\_Self-project\Game project\OpenGL\Texture.cpp;F:\_Self-project\Game project\OpenGL\OpenGL\x64\Debug\Texture.obj

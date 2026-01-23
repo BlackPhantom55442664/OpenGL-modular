@@ -1,13 +1,26 @@
 #include "Shader.h"
 
-void Shader::createShader(std::vector<std::pair<const char*, GLenum>> shaders) {
+Shader::Shader() {
+	ID = 0;
+	shaderID = {};
+}
+
+Shader::Shader(std::vector<std::pair<const char*, GLenum>> &shaders) {
+	createShader(shaders);
+}
+
+void Shader::createShader(std::vector<std::pair<const char*, GLenum>> &shaders) {
+	if (ID != 0) glDeleteProgram(ID);
+	shaderID.clear();
+
 	for (auto shader : shaders) {
-		std::string shaderSource = loadShaderData(shader.first); 
-		std::cerr << shader.first << "return: " << std::endl << shaderSource << std::endl << std::endl;
+		std::string shaderSource = loadShaderData(shader.first);
 		const char* shaderCode = shaderSource.c_str();
 
 		GLuint shaderObject = createShader(shaderCode, shader.second);
 		shaderID.push_back(shaderObject);
+
+		//std::cerr << shader.first << "return: " << std::endl << shaderSource << std::endl << std::endl;
 	}
 
 	ID = createProgram();
@@ -17,7 +30,12 @@ Shader::~Shader() {
 	glDeleteProgram(ID);
 }
 
+GLuint Shader::getID() {
+	return ID;
+}
+
 void Shader::activate() {
+	if (ID == 0) std::cout << "Shader is blank" << std::endl;
 	glUseProgram(ID);
 }
 

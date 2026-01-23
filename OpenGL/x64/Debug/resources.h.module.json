@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "OpenGL\\x64\\Debug\\Resources.h.obj",
+            "outputs": [
+                "F:\\_Self-project\\Game project\\OpenGL\\OpenGL\\x64\\Debug\\vc145.pdb",
+                "OpenGL\\x64\\Debug\\",
+                "F:\\_Self-project\\Game project\\OpenGL\\OpenGL\\x64\\Debug\\Resources.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "Resources.h",
+                    "source-path": "f:\\_self-project\\game project\\opengl\\resources.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,33 +1,45 @@
-#ifndef CAMERA_H
-#define CAMERA_H
+#ifndef CAMERA
 
+#include<glad/glad.h>
+#include<GLFW/glfw3.h>
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
 #include<glm/gtc/type_ptr.hpp>
 
-// Camera position
-extern glm::vec3 cameraPos;
-extern glm::vec3 cameraFront;
+#include "utils.h"
 
-// Camera direction
-extern glm::vec3 cameraTarget;
-extern glm::vec3 cameraDirection;
+//#include "Resources.h"
 
-// Camera up
-extern glm::vec3 cameraUp;
+class Camera {
+public:
+	// Need update for move into private
+	GLfloat moveSpeed;
+	glm::vec3 position;
+	glm::vec3 front;
+	glm::vec3 up;
 
-// Look at
-extern glm::mat4 view;
+	glm::mat4 view;
+	glm::mat4 projection;
 
-// Matrix
-extern glm::mat4 model;
-extern glm::mat4 view;
-extern glm::mat4 projection;
+	GLfloat yaw;
+	GLfloat pitch;
+	GLfloat fov;
 
-// Direction
-//extern glm::vec3 direction;
-extern float yaw;
-extern float pitch;
-extern float fov;
+	GLfloat lastX;
+	GLfloat lastY;
+	GLfloat sensitivity;
 
+
+	Camera();
+	void update(GLFWwindow* window);
+	glm::mat4 getProjection();
+	glm::mat4 getView();
+
+	//static void mouseCallback(GLFWwindow* window, GLdouble xPos, GLdouble yPos);
+
+private:
+
+
+	void move(GLFWwindow* window);
+};
 #endif
