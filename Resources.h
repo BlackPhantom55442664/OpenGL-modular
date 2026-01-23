@@ -3,31 +3,28 @@
 
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
-#include "InitializeSystem.h"
-#include "Shader.h"
+#include "InitializeGLFWsystem.h"
+#include "Cube.h"
+#include "Camera.h"
+#include "Lighting.h"
 
-#include<vector>
+#include<glm/glm.hpp>
+#include<glm/gtc/matrix_transform.hpp>
+#include<glm/gtc/type_ptr.hpp>
 
-extern int SCREEN_WIDTH;
-extern int SCREEN_HEIGHT;
-extern const char* SCREEN_TITLE;
+// Window screen
 extern GLFWwindow* window;
+extern InitializeGLFWsystem initializer;
 
 
-extern std::vector<GLfloat> verticesCube;
-extern std::vector<GLfloat> vertices;
-extern std::vector<GLuint> attributeSize;
-extern std::vector<GLuint> indices;
-//extern glm::vec3 cubePositions[];
+// Object
+extern Camera camera;
+extern Cube cube;
+extern Light light;
 
 
-extern GLuint VAO;
-extern GLuint VBO;
-extern GLuint EBO;
+// Camera
+extern glm::mat4 cameraProjection;
+extern glm::mat4 cameraView;
 
-extern GLuint cubeVBO;
-
-
-extern Shader shader;
-
-#endif
+#endif // !RESOURCES_H
